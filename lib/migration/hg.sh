@@ -1,1 +1,1 @@
-. "$root/lib/type/mercurial.sh"
+. "$root/lib/migration/mercurial.sh"

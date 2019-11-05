@@ -1,1 +1,1 @@
-. "$root/lib/type/subversion.sh"
+. "$root/lib/migration/subversion.sh"
