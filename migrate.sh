@@ -46,7 +46,7 @@ if [ "$1" = "" ] || [ "$2" = "" ] || [ "$3" = "" ]
 then
     echo "Usage: $0 <type> <source_repo> <git_target_repo>"
     echo "Types:"
-    for t in $(find "$root/lib/type" -mindepth 1 -maxdepth 1 | sort)
+    for t in $(find "$root/lib/migration" -mindepth 1 -maxdepth 1 | sort)
     do
         basename "$t" | sed 's/.sh$//'
     done
@@ -60,7 +60,7 @@ target_repository=$3
 tmpdir="$root/tmp"
 authorfile="$root/authors"
 
-if [ ! -e "$root/lib/type/$1.sh" ]
+if [ ! -e "$root/lib/migration/$1.sh" ]
 then
     echo "Type is invalid."
     exit 1
